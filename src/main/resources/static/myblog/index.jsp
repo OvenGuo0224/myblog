@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:wb="http://open.weibo.com/wb">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>myBlog</title>
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/blog.css">
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="https://connect.facebook.net/zh_CN/sdk.js#xfbml=1&version=v2.11"></script>
 </head>
 
 <body>
     <!-- 标题栏 -->
-    <div class="blog-masthead">
+    <div class="blog-masthead" id="top">
         <div class="container">
             <nav class="blog-nav">
                 <a class="blog-nav-item active" href="#">首页</a>
@@ -25,7 +28,7 @@
 
     <div class="container">
         <div class="blog-header">
-            <h1 class="blog-title">The Bootstrap Blog</h1>
+            <h1 class="blog-title">Oven的技术栈</h1>
             <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p>
         </div>
 
@@ -33,7 +36,17 @@
             <!-- 文章 -->
             <div id="main" class="col-sm-8 blog-main">
                 <!-- post -->
-                <div class="blog-post"></div>
+                <div class="blog-post">
+                    There was something
+                </div>
+                <div class="blog-post">There was something</div>
+                <div class="blog-post">There was something</div>
+                <div class="blog-post">There was something</div>
+                <div class="blog-post">There was something</div>
+                <div class="blog-post">There was something</div>
+                <div class="blog-post">There was something</div>
+                <div class="blog-post">There was something</div>
+                <div class="blog-post">There was something</div>
                 <!-- 页脚 -->
                 <nav>
                     <ul class="pager">
@@ -52,11 +65,11 @@
             <!-- 右侧导航栏 -->
             <div id="rightMenu" class="col-sm-3 col-sm-offset-1 blog-sidebar">
                 <div class="sidebar-module sidebar-module-inset">
-                    <h4>about</h4>
-                    <p>test test test stests testset setset setsetse tset set setse etss</p>
+                    <h4>关于</h4>
+                    <p>有什么问题请联系<a href="mailto:ovenguo0224@gmail.com">ovenguo0224@gmail.com</a></p>
                 </div>
                 <div class="sidebar-module">
-                    <h4>Archives</h4>
+                    <h4>文章档案</h4>
                     <ol class="list-unstyled">
                         <li><a href="#">March 2014</a></li>
                         <li><a href="#">February 2014</a></li>
@@ -73,13 +86,20 @@
                     </ol>
                 </div>
                 <div class="sidebar-module">
-                    <h4>Elsewhere</h4>
+                    <h4>关注</h4>
                     <ol class="list-unstyled">
-                        <li><a href="#">GitHub</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Facebook</a></li>
+                        <li><a href="https://github.com/OvenGuo0224">GitHub</a></li>
+                        <li>
+                            <a href="https://twitter.com/Oven_Guo?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Oven_Guo</a>
+                        </li>
+                        <li>
+                            <a class="fb-follow" data-href="https://www.facebook.com/zuck" data-height="20" data-layout="standard" data-size="small" data-show-faces="false">Facebook</a>
+                        </li>
                     </ol>
                 </div>
+                <a href="#top" class="back-to-top">
+                    返回顶部
+                </a>
             </div>
             <!-- /.blog-sidebar -->
         </div>
